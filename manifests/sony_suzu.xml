@@ -4,11 +4,12 @@
     <remote name="sony" fetch="git://github.com/sonyxperiadev" />
     <remote name="nxp" fetch="git://github.com/NXPNFCProject/" />
     <remote name="mer-hybris" fetch="git://github.com/mer-hybris" />
+    <remote name="peat-psuwit" fetch="git://github.com/peat-psuwit" />
 
     <remove-project path="bootable/recovery" name="android_bootable_recovery" />
     <remove-project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" />
     <remove-project path="external/toybox" name="android_external_toybox" />
-    <remove-project path="hardware/qcom/audio" name="android_hardware_qcom_audio" />
+    <remove-project path="hardware/qcom/audio" name="Halium/android_hardware_qcom_audio" />
     <remove-project path="hardware/qcom/camera" name="android_hardware_qcom_camera" />
     <remove-project path="hardware/qcom/display" name="android_hardware_qcom_display" />
     <remove-project path="hardware/qcom/media" name="android_hardware_qcom_media" />
@@ -33,7 +34,7 @@
     <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="beidl" revision="halium-7.1" />
     <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="beidl" revision="halium-7.1" />
 
-    <project path="kernel/sony/suzu" name="device-kernel-loire" revision="ubports/LA.UM.5.7.r1" remote="beidl" />
+    <project path="kernel/sony/suzu" name="device-kernel-loire" revision="ubports/LA.UM.5.7.r1-ng" remote="beidl" />
 
     <project path="system/core" name="Halium/android_system_core" groups="pdk" remote="hal" revision="halium-7.1-adbroot" />
 
@@ -47,7 +48,7 @@
     <project path="vendor/qcom/opensource/wlan" name="hardware-qcom-wlan" groups="device" remote="sony" revision="master" />
     <project path="vendor/qcom/opensource/dataservices" name="vendor-qcom-opensource-dataservices" groups="device" remote="sony" revision="master" />
     <project path="vendor/oss/fingerprint"  name="vendor-sony-oss-fingerprint" groups="device" remote="sony" revision="android-7.1.1_r55" />
-    <project path="vendor/oss/macaddrsetup" name="macaddrsetup" groups="device" remote="sony" revision="master" />
+    <project path="vendor/oss/macaddrsetup" name="macaddrsetup" groups="device" remote="peat-psuwit" revision="fix-android-7-build" />
     <project path="vendor/oss/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
     <project path="vendor/oss/timekeep" name="timekeep" groups="device" remote="sony" revision="master" />
     <project path="vendor/oss/transpower" name="transpower" groups="device" remote="sony" revision="android-7.1.1_r55" />
